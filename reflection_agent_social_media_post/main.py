@@ -45,3 +45,6 @@ print(graph.get_graph().draw_mermaid())
 
 if __name__ == "__main__":
     OPENAI_API_KEY = os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")  
+    inputs = HumanMessage(content="you should learn langchain and langraph to be more productive")
+
+    response = graph.invoke([inputs])
