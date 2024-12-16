@@ -28,7 +28,7 @@ generation_prompt = ChatPromptTemplate.from_messages(
 )
 
 
-llm = ChatOpenAI()
+llm = ChatOpenAI(model="gpt-3.5-turbo" )
 
 generate_chain = generation_prompt | llm
 reflect_chain = reflection_prompt | llm
